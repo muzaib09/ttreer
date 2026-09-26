@@ -1,40 +1,21 @@
-// data types 
-// const name:string = 'ali'
-// console.log("🚀 ~ name:", name)
-// const num1:number = 10
-// const num2:number = 10
-// console.log("🚀 ~ num1:", num1 + num2)
-// const users:object ={
-//     name:'ali',
-//     age:'12'
+"use strict";
+// const input = <HTMLInputElement>document.querySelector("#inp")
+// console.log("🚀 ~ input:", input.value = "hello")
+// const heading = <HTMLHeadingElement>document.querySelector("#heading")  
+// console.log("🚀 ~ heading:", heading.innerHTML = 'hello')
+// const para = <HTMLParagraphElement>document.querySelector("#para")  
+// console.log("🚀 ~ heading:", heading.innerHTML = 'hello')
+// function Student(name,age) {
+// this.name = 'Ali';
+// this.age = 10
 // }
-// console.log("🚀 ~ users:", users)
-// const fruits:string[] =['apple','mango','orange']
-// console.log("🚀 ~ fruits:", fruits)
-// const users:object[] = [
-//     {
-//         name: 'ali',
-//         age: 21
-//     },
-//     {
-//         name:'asad',
-//         age:31
-//     }
-// ]
-// console.log("🚀 ~ users:", users)
-// string
-// number
-// boolean
-// object
-// Array
-// literal
-// tupple
-// function
-// const confirm:string |boolean = true
-// console.log("🚀 ~ confirm:", confirm)
-// const user:[string,number,boolean] = ["ali",21,false]
-// console.log("🚀 ~ user:", user)
-const sum = (num1, num2) => num1 + num2;
-const output = sum();
-console.log("🚀 ~ output:", output);
-export {};
+class Student {
+    name;
+    age;
+    constructor(param1, param2) {
+        this.name = param1;
+        this.age = param2;
+    }
+}
+const firstStudent = new Student("Ali", 10);
+console.log(firstStudent);
